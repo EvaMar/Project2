@@ -22,6 +22,8 @@ As input please provide, in this order the database filepath (the same you have 
 
 ## Run.py
 
+This code is saved under the app folder together with the files go.html and master.html
+
 This code will start a web app where an emergency worker can input a new message and get classification results in several categories. 
 Once you run the code please follow the web link that will appear.
 Pay carful attention to the lines:
