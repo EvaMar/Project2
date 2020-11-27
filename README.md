@@ -14,11 +14,18 @@ As inputs plese provide, in this order, message dataset filepath, categories dat
 
 If the code returns any error please make sure you insert sqlite:/// before the database filepath
 
+How to run script (please adapt the below with your folder structure):
+python process_data.py messages.csv categories.csv sqlite:///Disaster.db
+
+
 ## Train_classifier.py
 
 This code will built, train and evaluate a model to associate the right category to each message
 
 As input please provide, in this order the database filepath (the same you have provided for Process_data.py, please remember if you have used sqlite:/// before the filepath) and the model filepath (which will terminate with the name of the model.pkl). The latter will be used to store the model as pickle
+
+How to run script (please adapt the below with your folder structure):
+python train_classifier.py sqlite:///Disaster.db multimodel.pkl
 
 ## Run.py
 
