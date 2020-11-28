@@ -33,13 +33,9 @@ This code is saved under the app folder together with the files go.html and mast
 
 This code will start a web app where an emergency worker can input a new message and get classification results in several categories. 
 Once you run the code please follow the web link that will appear.
-Pay carful attention to the lines:
 
-engine = create_engine('sqlite:///../Disaster.db')
+In order to run the code, you need to provide the database and the model you have created in the previous steps. Specifically, you need to provide the exact arguments you have included in train_classifier.py. If run.py code is saved in a different folder than train_classifier.py please make sure you provide the code with the correct folder path for the parameters.  
 
-df = pd.read_sql_table('MessagesML', engine)
-
-model = joblib.load("../multimodel.pkl")
-
-You will need to make sure those are the same paths and names you have used in Process_data.py and Train_classifier.py
+How to run script (please adapt the below with your folder structure):  
+python run.py "sqlite:///../Disaster.db" "../multimodel.pkl"
 
