@@ -6,6 +6,10 @@ The purpose of this project is to use a provided dataset containing real message
 
 This will also include a web app where an emergency worker can input a new message and get classification results in several categories
 
+## Git hub link
+
+The link for the Github repository is https://github.com/EvaMar/Project2/
+
 ## Process_data.py
 
 This code will clean and process the input dataset messages and categories. A copy of those dataset is provided in this GitHub
@@ -32,7 +36,7 @@ python train_classifier.py sqlite:///Disaster.db multimodel.pkl
 This code is saved under the app folder together with the files go.html and master.html
 
 This code will start a web app where an emergency worker can input a new message and get classification results in several categories. 
-Once you run the code please follow the web link that will appear.
+Once you run the code please follow the web link that will appear. If the 0.0.0.0 part in the link does not work you can substitute it with localhost
 
 In order to run the code, you need to provide the database and the model you have created in the previous steps. Specifically, you need to provide the exact arguments you have included in train_classifier.py. If run.py code is saved in a different folder than train_classifier.py please make sure you provide the code with the correct folder path for the parameters.  
 
